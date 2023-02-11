@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title> Task 1 </title>
+</head>
+<body>
+	<div class="container-fluid">
+  <h2>KSN</h2>
+  <h4>Hotel and Rooms</h4>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="C:/Users/aswin/OneDrive/Pictures/fivestar.jpg" alt="Los Angeles" style="width:100%; height: 400px">
+        <div class="carousel-caption">
+          <h3 style="color:cyan"> Welcome to KSN </h3>
+          <p style="color: cyan;"> Sikkiram poidu !</p>
+        </div>
+      </div>
+
+       <div class="item">
+        <img src="C:/Users/aswin/OneDrive/Pictures/hinside.jpg" alt="New York" style="width:100%; height: 400px">
+        <div class="carousel-caption">
+          <h2 style="color:cyan"> Inner Decoration </h2>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="C:/Users/aswin/OneDrive/Pictures/room2.jpg" alt="Chicago" style="width:100%; height: 400px;">
+        <div class="carousel-caption">
+          <h2 style="color:red"> Ondi Kattai </h2>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="C:/Users/aswin/OneDrive/Pictures/room1.jpg" alt="New York" style="width:100%; height: 400px">
+        <div class="carousel-caption">
+          <h2 style="color:red;"> Jodigal </h2>
+        </div>
+    </div>
+    <div class="item">
+        <img src="C:/Users/aswin/OneDrive/Pictures/Hotelpools.webp" alt="New York" style="width:100%; height: 400px">
+        <div class="carousel-caption">
+          <h2 style="color:red">Swiming Pool</h2>
+    </div>
+    </div>
+
+    <div class="item">
+        <img src="C:/Users/aswin/OneDrive/Pictures/hgym.webp" alt="New York" style="width:100%; height: 400px">
+        <div class="carousel-caption">
+          <h2 style="color:red">Bloody Sweat</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <form style="font-size: 30px;" name="f1">
+  <label class="col-md-6" style="text-align: right;">
+  <span>Room Type:</span><br>
+  <span>Bed Type:</span><br>
+  <span>Extra :</span><br>
+  <span>No Of Days :</span>	
+	</label>
+	<div class="col-md-2" style="text-align: center;">
+	<input type="radio" name="rbtn" value="11000" id="r1" onclick="show(this)">AC<br>
+	<input type="radio" name="rbtn2" value="single" id="r3" onclick="show2(this)">Single<br>
+  <input type="checkbox" name="rbtn3" value="gym" id="r5" onclick="show3(this)">Cab<br>
+  <input type="number" name="btn" value="days" id="r7" style="width:200px">
+	</div>
+	<div class="col-md-2" style="text-align:center">
+		<input type="radio" name="rbtn" value="8000" id="r2" onclick="show(this)">NON/AC<br>
+		<input type="radio" name="rbtn2" value="double" id="r4" onclick="show2(this)">Double<br>
+    <input type="checkbox" name="rbtn3" value="Cab" id="r6" onclick="show3(this)">Gym<br>
+    <input type="button" class="btn btn-info" value="Total" onclick="total()">
+		</div>
+	<span class="col-md-2" id="sp1" oninvalid="this">
+	</span>
+	<span class="col-md-2" id="sp2">
+	</span>
+  <span class="col-md-2" id="sp3">
+  </span>
+  <input type="text" name="t1" class="col-md-12" style="text-align:center;">
+ </form>
+</div>
+
+<script type="text/javascript">
+  var ratea = 0;
+  var rateb = 0;
+  var ratec = 0;
+
+	function show(rbtn)
+	{
+      if(r1.checked)
+      	ratea=5000;
+      if(r2.checked)
+      	ratea=0;
+      sp1.innerHTML="<h4 style=color:hotpink><b> Rs:&nbsp;"+ ratea +" Per Day</b></h4>"
+	}
+	function show2(rbtn)
+	{ 
+      if(r3.checked)
+      	rateb=6000;
+      if(r4.checked)
+      	rateb=7500;
+      if(r1.checked && r3.checked)
+        rateb=11000;
+      if(r1.checked && r4.checked)
+        rateb=12500
+      sp2.innerHTML="<h4 style=color:hotpink><b> Rs:&nbsp;"+ rateb +" Per Day</b></h4>"
+    }
+    function show3(rbtn)
+    {
+      if(r5.checked)
+        ratec=400;
+      if(r6.checked)
+        ratec=500;
+      if(r5.checked && r6.checked)
+        ratec=900;
+      sp3.innerHTML="<h4 style=color:hotpink><b> Rs:&nbsp;"+ ratec +" Per Day</b></h4>"
+     }
+     function total()
+     {
+      var a,b,c;
+      a = document.getElementById('r7').value;
+      b = ratea+rateb+ratec;
+      c = b*a;
+      f1.t1.value=c;
+    }
+</script>
+
+</body>
+</html>
