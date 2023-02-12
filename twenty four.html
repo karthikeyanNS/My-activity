@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> On Click Event</title>
+	<script type="text/javascript">
+		function add()
+		{
+			var a,b,c;
+			a=parseInt(f1.t1.value);
+			b=parseInt(f1.t2.value);
+			c=a+b;
+			f1.t3.value=c;
+		}
+		function sub()
+		{
+			var a,b,c;
+			a=Number(f1.t1.value);
+			b=Number(f1.t2.value);
+			c=a-b;
+			f1.t3.value=c;
+		}
+		function pov()
+		{
+			var a,b,c;
+			a=Number(f1.t1.value);
+			b=Number(f1.t2.value);
+			c=a**b;
+			f1.t3.value=c;
+		}
+		function calc()
+		{
+			var a,b,c,d;
+			a=Number(f2.t1.value);
+			b=Number(f2.t2.value);
+			c=Number(f2.t3.value);
+			d=((a*b*c)/100);
+			f2.t4.value=d;
+		}
+		function verify()
+		{
+			var a,b;
+			a=Number(f3.t1.value);
+			if(a<12)
+			{
+               b="hello Kulanthai";
+               
+           }
+           else if( a<20)
+           {
+           	b="hey Boy";
+           	
+           }
+           else if( a<30)
+           {
+           	b="vada youngBoomer";
+           	
+           }
+           else
+           {
+           	b="bye Boomer";
+           }
+           	f3.t2.value=b;
+           
+		}
+		function big()
+		{
+			var a,b,c,d,e,f;
+			a=Number(f4.t1.value);
+			b=Number(f4.t2.value);
+			c=Number(f4.t3.value);
+			d=Number(f4.t4.value);
+			e=Number(f4.t5.value);
+			if(a>b && a>c && a>d && a>e)
+			{
+				f=(a);
+				f4.t6.value=f;
+			}
+			else if(b>c && b>d && b>e)
+			{
+				f=(b);
+				f4.t6.value=f;
+			}
+			else if(c>d && c>e)
+			{
+				f=(c);
+				f4.t6.value=f;
+			}
+			else if(d>e)
+			{
+				f=(d);
+				f4.t6.value=f;
+			}
+			else
+			{
+				f=(e);
+				f4.t6.value=f;
+			}
+		}
+		function ans()
+		{
+          var a,b,c,d,e,f,g;
+            a=Number(f5.t1.value);
+			b=Number(f5.t2.value);
+			c=Number(f5.t3.value);
+			d=Number(f5.t4.value);
+			e=Number(f5.t5.value);
+			f=(a+b+c+d+e);
+			if(a>35 && b>35 && c>35 && d>35 && e>35)
+			{
+				g="<font color='green'> Pass </font>";
+			}
+			else
+			{
+				g="<font color='red'> Therathu </font>";
+			}
+			d1.innerHTML="<big><b> Result is :"+g;
+            }
+        function table()
+        {
+            	var a,b,i;
+            	a=Number(f6.t1.value);
+            	for (i = 1; i <=10; i++) 
+            	{
+                 b += i + " * " + a + " = " + a*i + "<br>";
+                 d2.innerHTML="<font color='navy'><big>" + b + "</big></font>";
+                 }
+        }
+        function check()
+        {
+			var a,b,c,d;
+			a=(f7.t1.value);
+			b=Number(f7.t2.value);
+			c=Number(f7.t3.value);
+			d=b*c;
+			p1.innerHTML=a;
+			q1.innerHTML=b;
+			pr1.innerHTML=c;
+			tot.innerHTML=d;
+        }
+	</script>
+</head>
+<body>
+	<form name="f1">
+		<label>
+			Number 1:<input type="text" name="t1" placeholder="no 1">
+			<br>
+			Number 2:<input type="text" name="t2" placeholder="no 2">
+			<br>
+			Answer :<input type="text" name="t3" placeholder="Answer" readonly>
+			<br>
+		</label>
+		<br>
+		<input type="button" name="b1" value="Add" onclick="add()">
+		<input type="button" name="b2" value="Sub" onclick="sub()">
+		<input type="button" name="b3" value="Pov" onclick="pov()">
+	</form>
+	<br>
+	<hr>
+	<form name="f2">
+		<label>
+			Rate OF Interset:<input type="text" name="t1"><br>
+			Simple Interset:<input type="text" name="t2"><br>
+			Number Of Years:<input type="text" name="t3"><br>
+		</label>
+		<br>
+		<input type="button" name="b1" value="calc" onclick="calc()">
+		=<input type="text" name="t4" readonly>
+	</form>
+	<br>
+	<hr>
+	<form name="f3">
+		<label>
+		Age:<input type="text" name="t1"></label>
+		<input type="button" name="b1" value="verify" onclick="verify()">=<input type="text" name="t2" readonly>
+    </form>
+    <br>
+    <hr>
+    <form name="f4">
+    	<label>
+    		Number 1:<input type="text" name="t1"><br>
+    		Number 2:<input type="text" name="t2"><br>
+    		Number 3:<input type="text" name="t3"><br>
+    		Number 4:<input type="text" name="t4"><br>
+    		Number 5:<input type="text" name="t5">
+    		<br>
+    	</label>
+    	<br>
+    	<input type="button" name="b1" value="biggest" onclick="big()">=<input type="text" name="t6" readonly>
+    </form>
+    <hr>
+    <form name="f5">
+    	<label>
+    		Subject 1:<input type="text" name="t1"><br>
+    		Subject 2:<input type="text" name="t2"><br>
+    		Subject 3:<input type="text" name="t3"><br>
+    		Subject 4:<input type="text" name="t4"><br>
+    		Subject 5:<input type="text" name="t5">
+    		<br>
+    	</label>
+    	<br>
+    	<input type="button" name="b1" value="pass/fail" onclick="ans()">
+    <hr>
+    <div id="d1">
+    </div>
+    <hr>
+</form>
+<form name="f6">
+	<label>
+		Enter The Number:<input type="text" name="t1">
+	</label>
+	<br>
+	<input type="button" name="b1" value="show the table" onclick="table()">
+	<hr>
+	<div id="d2"></div>
+	<hr>
+</form>
+	<form name="f7">
+		<label>
+		Enter Product Name:<input type="text" name="t1"><br>
+		Enter Quantity :<input type="text" name="t2"><br>
+		Enter Price :<input type="text" name="t3"><br>
+	</label>
+	<input type="button" name="b1" value="check" onclick="check()">
+	<hr>
+	<div>
+			<table border="1" width="300">
+		<tr>
+			<th>Product</th>
+			<th>Quantity</th>
+			<th>Price</th>
+			<th>Total</th>
+			
+		</tr>
+		<tr style="height:50px;">
+			<th id="p1"></th>
+			<th id="q1"></th>
+			<th id="pr1"></th>
+			<th id="tot"> </th>
+	
+		</tr>
+	</table>
+	</div>
+	</form>
+</body>
+</html>
