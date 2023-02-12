@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> script onFocus/onblur</title>
+<script>
+function text_focus(textbox)
+{
+textbox.style.backgroundColor='yellow';
+textbox.style.fontSize=20;
+}
+function text_blur(textbox)
+{
+textbox.style.backgroundColor='white';
+textbox.style.fontSize=10;
+}
+
+function add()
+{
+var m1,m2,m3,m4,m5,tot,avg;
+m1 =parseInt(ff.t2.value);
+m2 =parseInt(ff.t3.value);
+m3 =parseInt(ff.t4.value);
+m4 =parseInt(ff.t5.value);
+m5 =parseInt(ff.t6.value);
+tot=  m1+m2+m3 +m4+m5;
+avg = tot/5;
+ff.t7.value=tot;
+ff.t8.value=avg;
+}
+</script>
+</head>
+<body>
+
+
+<form name="ff">
+Student name  :  <input type="text" name="t1" onFocus="text_focus(this)" onBlur="text_blur(this)"> 
+<br><br>
+Mark1  :  <input type="text" name="t2"  onFocus="text_focus(this)" onBlur="text_blur(this)"> 
+<br><br>
+Mark2  :  <input type="text" name="t3"  onFocus="text_focus(this)" onBlur="text_blur(this)"> 
+<br><br>
+Mark3  :  <input type="text" name="t4"  onFocus="text_focus(this)" onBlur="text_blur(this)"> 
+<br><br>
+Mark4  :  <input type="text" name="t5"  onFocus="text_focus(this)" onBlur="text_blur(this)"> 
+<br><br>
+Mark5  :  <input type="text" name="t6"  onFocus="text_focus(this)" onBlur="text_blur(this)"> 
+<br><br>
+<br><br>
+Total  :  <input type="text" name="t7" onFocus="add()" readonly>
+<br><br>
+Average  :  <input type="text" name="t8" readonly>
+</form>
+</body>
+</html>
