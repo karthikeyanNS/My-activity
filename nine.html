@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration design using html</title>
+</head>
+<body>
+        <style>
+div {
+    height: 1200px;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%)
+}
+</style>
+<div>
+<body>
+
+
+   <table align="center" cellspacing="0" cellpadding="6"  width="55%">
+   <tr>
+         <th align="right"> First Name :  </th>  <th align="center"> <input type="text" name="t1"> </th> 
+         <th align="left">(Max 50 Characters Allowed) </th></tr>
+   <tr>
+         <th align="right"> Last Name  :  </th>  <th align="center"> <input type="text" name="t2"> </th>
+         <th align="left">(Max 50 Characters Allowed) </th></tr>  
+   <tr>
+         <th align="right"> Email Id   :  </th>  <th align="center"> <input type="text" name="t3"> </th> </tr>
+   <tr>
+         <th align="right"> Mob Number :  </th>  <th align="center"> <input type="text" name="t4" maxlength="10"></th> <th align="left">  (Max 10 digits Allowed) </th></tr>
+   <tr>
+         <th align="right"> Gender     :  </th>  <th align="center"> <input type="radio" name="r1" value="Male"> Male</th>
+         
+                <th></th> 
+                <th align="center">&nbsp;&nbsp;&nbsp;<input type="radio" name="r1" value="Female"> Female </th> </tr>
+   <tr>
+   	 <th align="right">  D O B     :   </th>   
+                  <th>
+                   <select name="Date"> <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                                                </select>
+        	<select name="Date">    <option value="jan">Jan</option>
+                                        <option value="feb">Feb</option>
+                                        <option value="mar">Mar</option>
+                                        <option value="apr">Apr</option>
+                                        <option value="may">May</option>
+                                        <option value="jun">Jun</option>
+                                        <option value="jul">Jul</option>
+                                        <option value="aug">Aug</option>
+                                        <option value="sep">Sep</option>
+                                        <option value="oct">Oct</option>
+                                        <option value="nov">Nov</option>
+                                        <option value="dec">Dec</option>
+                                                         </select>
+        	<select name="year">    <option value="2000">2000</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2006">2006</option>
+                                        <option value="2007">2007</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+        	</select></th></tr>
+    <tr valign="top">
+         <th align="right">  Address   : </th>
+                <th> <textarea name="ta1" rows="7" cols="20"></textarea> </th></tr>
+    <tr>
+        <th align="right">   City      : </th> <th> <input type="text" name="t5"> </th> <th align="left">(Max 50 Characters Allowed)</th></tr>
+    <tr>
+        <th align="right">   Pin Code  : </th> <th> <input type="text" name="t6"> </th> <th align="left">(Max 6 Characters Allowed)</th></tr>
+    <tr>
+        <th align="right">   State     : </th> <th> <input type="text" name="t7"> </th> <th align="left">(Max 50 Characters Allowed)</th></tr>
+    <tr>
+        <th align="right">   Country   : </th> <th> <input type="text" name="t8" value="India" readonly> </th>  <th align="left">(Max 50 Characters Allowed)</th></tr>
+    <tr>
+        <th align="right">   Hobbies   : </th> 
+                   <th align="center"> <input type="checkbox" name="ch" value="Singing">Singing </th></tr>
+		   <tr><th></th> <th align="center">&nbsp;<input type="checkbox" name="ch" value="drawing">Drawing </th></tr>
+		   <tr><th></th> <th align="center">&nbsp;<input type="checkbox" name="ch" value="dancing">Dancing </th></tr>
+		   <tr><th></th> <th align="center">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="ch" value="sketching">Sketching </th></tr>
+		   <tr><th></th> <th align="center"><input type="checkbox" name="ch" value="others"> Others </br>
+                   <input type="text" name="t9"></th> <th align="left"> (Max 50 Characters Allowed) </th></tr>
+    <tr>
+        <th align="right"> Qualifictaion : </th> 
+                  <th align="center">&nbsp;&nbsp; <input type="checkbox" name="ch" value="Singing">High School(10th)  </th></tr> 
+		  <tr><th></th> <th align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="ch" value="drawing">Higher School(12th)</th></tr>
+		  <tr><th></th> <th align="center">&nbsp;&nbsp;<input type="checkbox" name="ch" value="dancing">Graduation(UG)</th></tr>
+		  <tr><th></th> <th align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="ch" value="sketching">Post Graduation(PG)</th></tr>
+		  <tr><th></th> <th align="center"><input type="checkbox" name="ch" value="others">PHD(doctrate)</th></tr>
+    <tr>
+        <th align="right">Course applied For :</th> 
+                   <th align="center">&nbsp;&nbsp;&nbsp; <input type="radio" name="course" value="bca"> BCA </th></tr>
+		   <tr><th></th><th align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="course" value="b.com">B.COM
+                   </th></tr>
+                   <tr><th></th> <th align="center">&nbsp; <input type="radio" name="course" value="bsc">BSC  </th></tr>
+                   <tr><th></th> <th align="center"> <input type="radio" name="course" value="ba">BA
+                   </th></tr>
+                   <tr><th></th> <th align="center">&nbsp;&nbsp; <input type="radio" name="course" value="mca">MCA
+                   </th></tr>
+                   <tr><th></th> <th align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="course" value="m.com">M.COM</th></tr>
+                   <tr><th></th> <th align="center">&nbsp; <input type="radio" name="course" value="msc">MSC
+                   </th></tr>
+                   <tr><th></th> <th align="center"> <input type="radio" name="course" value="ma">MA
+                   </th> </tr>
+                   <tr>
+                        <th align="center" colspan="3"><input type="submit" name="s1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" name="s2"></th>
+                   </table>
+</div>		         		
+</body>
+</html>
+
+
