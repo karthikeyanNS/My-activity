@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Boot Strap Pratice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style type="text/css">
+	.r1
+	{
+		background: lightgrey;
+	}
+	.c1
+	{
+		display: inline-block;
+		font-size: 10px;
+		padding: 2px;
+		margin-top: 10px;
+	}
+	.col2
+	{
+		padding: 10px;
+		height: 80px;
+		padding: 25px;
+	}
+	.col2 h1
+	{
+		color: navy;
+		font-size: 40px;
+		position: relative;
+		bottom: 20px;
+	}
+	.col2 h6
+	{
+		position: relative;
+		bottom: 30px;
+		font-size: 14px;
+		left: 3px;
+	}
+	.col3
+	{
+		height: 40px;
+		background: lightgrey;
+	}
+	.col3 h5 a
+	{
+		text-decoration: none;
+		color: red;
+		padding: 5px;
+		position: relative;
+		top: 8px;
+	}
+	.col3 h5 a:hover
+	{
+		background: palegoldenrod;
+	}
+	.r4
+	{
+		background: linear-gradient( to right,#000428,#004e92,#4568dc);
+		height: 500px;
+	}
+	.col4
+	{
+		height: 500px;
+	}
+	.col4 img
+	{
+		height: 495px;
+		width: 620px;
+		border-radius: 50%;
+	} 
+	.col4 section
+	{
+		position: relative;
+		left: 120px;
+		top: 150px;
+		color: white;
+	}
+	.col4 section a
+	{
+		text-decoration: none;
+		border: 2px black solid;
+		padding: 5px;
+		border-radius:10px; 
+	    border-color: white;
+        position: relative;
+		top: 20px;
+		color: white;
+	}
+	.col4 section a:hover
+	{
+		background: cyan;
+		border-color: cyan;
+		color: navy;
+	}
+	.col5
+	{
+		height: 200px;
+		width: 400px;
+		margin-inline: 12px;
+	}
+	.col5 section
+	{
+		color: whitesmoke;
+		position: relative;
+		bottom: 10px;
+		text-align: center;
+	}
+	.col5:hover #img
+	{
+		  position: relative;
+          animation-name: example;
+          animation-duration: 4s;
+          animation-iteration-count: infinite; 
+          transition: 5s transform;
+	}
+	@keyframes example 
+	{
+  0%   {left:0px; top:0px; transform: rotateY(90deg);}
+  50%  {left:300px; top: 0px; transform: rotateY(180deg);}
+  100% {left:0px; top:0px; transform: rotateY(360deg);}
+  }
+  .col6
+  {
+  	height: 200px;
+  }
+  .col6 #s2
+  {
+  	text-align: center;
+  	position: relative;
+  	top: 40px;
+  }
+  .col7 
+  {
+  	height: 350px;
+  	display: flex;
+  	flex-direction: column;
+  	overflow: hidden;
+  }
+  .col7 div
+  {
+  	border: 1px solid hotpink;
+  	width:100%;
+  	height: 100%;
+  	padding:5px;
+  }
+  .para
+  {
+  	text-align: justify;
+  }
+  .col7 #img
+  {	
+  	height: 120px; 
+  	width: 100%;
+  	margin-bottom:10px;
+  }
+	</style>
+    </head>
+<body>
+	<header class="container">
+		<div class="row r1">
+			
+		<div class="row col1">
+		<h4 class="col-md-2 c1"> Free-Shiping </h4>
+		<h4 class="col-md-2 c1"> Cash-On-Delivery </h4>
+		<h4 class="col-md-2 c1"> Free-Return </h4>
+		<div class="col-md-4"> &nbsp; </div>
+		<h4 class="col-md-2 c1" id="h4" style="text-align:right;"> Track-Order </h4>
+		</div>
+		</div>
+		</div>
+		<div class="row r2">
+			<div class="col-md-4 col2"><h1>Universe</h1><h6>Online Shopping Store</h6></div>
+			<div class="col-md-4 col2" align="center"> <input type="text" placeholder="search keywords ...." style="width:400px;"></div>
+			<div class="col-md-4 col2" align="right"> <h5>Login or Sign-up</h5></div>
+		</div>
+		<div class="row r3">
+			<div class="col-md-12 col3">
+				<h5 align="center">
+				<a href="#">Home</a>
+				<a href="#">Electronics</a>
+				<a href="#">Mobile-Phones</a>
+				<a href="#">Home & Electronics</a>
+				<a href="#">Contact-Us</a>
+				</h5>
+			</div> 
+		</div>
+	</header>
+	<div class="container">
+	<div class="row r4">
+		<div class="col-md-6 col4">
+			<img src="C:/Users/aswin/OneDrive/Pictures/wc.webp">
+		</div>
+		<div class="col-md-6 col4">
+			<section>
+			<h1>Festival Offers</h1>
+			<h3>Tv and Appliances</h3>
+			<h5>No Cost EMI</h5>
+			<a href="#">Shop Now</a>
+			</section>
+		</div>	
+		</div>
+		<div class="row r5" style="padding: 20px;">
+			<div class="col-md-4 col5" style="background: #8c1aff;">
+			<img src="C:/Users/aswin/OneDrive/Pictures/iphone.webp" style="height: 80px; width: 80px;" id="img">
+		<section>
+			<h2>Festive Celebration</h2>
+			<h4>Mobile and Accesseroies</h4>
+			<h6>Buy Now</h6>
+		</section>
+	</div>
+			<div class="col-md-4 col5" style="background: red;">
+			<img src="C:/Users/aswin/OneDrive/Pictures/red deal.png" style="height: 80px; width: 80px;" id="img">
+			<section>
+			<h2>Grab best offers</h2>
+			<h4>Only for today</h4>
+			<h6>Explore Now</h6>
+		</section>
+		</div>
+			<div class="col-md-4 col5" style="background:black">
+				<img src="C:/Users/aswin/OneDrive/Pictures/world.jpg" style="height: 80px; width: 80px;" id="img">
+			<section>
+			<h2>World Wide Shipping</h2>
+			<h4>Free Shiping</h4>
+			<h6>Order Now</h6>
+		</section>
+			</div>
+		</div>
+		<div class="row r5" style="background:#ffe600; padding: 20px;">
+			<div class="col-md-4 col6">
+				<img src="C:/Users/aswin/OneDrive/Pictures/tv2.png" style="height:180px; width: 180px; padding: 3px; margin-top: 8px; margin-right: 250px;">
+			</div>
+			<div class="col-md-4 col6">
+				<section id="s2">
+				<h1>Electronics</h1>
+				<h6> Online Shoping For Electronics From a Great selection</h6>
+			</section>
+			</div>
+			<div class="col-md-4 col6">
+				<img src="C:/Users/aswin/OneDrive/Pictures/tv.png" style="height:180px; width: 180px; padding: 3px; margin-top: 8px; margin-left: 240px;">
+			</div>
+		</div>
+		<div class="row r6"  style="padding: 20px;">
+			<div class="col-md-2 col7">
+				<div>
+				<img src="C:/Users/aswin/OneDrive/Pictures/lg.jpg" id="img">
+				<p class="para">LG 80 cm (32 inches) HD Ready Smart LED TV 32LQ576BPSA (Ceramic Black)<br>
+				MRP:<s>₹23,990</s><br>OFFER: ₹15,490</p>
+			</div>
+			</div>
+			<div class="col-md-2 col7">
+				<div>
+				<img src="C:/Users/aswin/OneDrive/Pictures/realme.jpg" id="img">
+				<p class="para">realme NEO 80 cm (32 inch) HD Ready LED Smart TV (RMV2101)<br>
+				MRP:<s>₹14,000</s><br>OFFER: ₹13,600</p>
+				</div>
+			</div>
+			<div class="col-md-2 col7">
+				<div>
+				<img src="C:/Users/aswin/OneDrive/Pictures/redmi.jpg" id="img">
+				<p class="para">Redmi 80 cm (32 inches) Android 11 Series HD Ready Smart LED TV | L32M6-RA/L32M7-RA (Black)<br>
+				MRP:<s>₹24,990</s><br>OFFER: ₹13,990</p>
+				</div>
+			</div>
+			<div class="col-md-2 col7">
+				<div>
+				<img src="C:/Users/aswin/OneDrive/Pictures/one.jpg" id="img">
+				<p class="para">OnePlus 80 cm (32 inches) Y Series HD Ready LED Smart Android TV 32Y1 (Black)<br>
+				MRP:<s>₹19,990</s><br>OFFER: ₹12,990</p>
+			    </div>
+			</div>
+			<div class="col-md-2 col7">
+				<div>
+				<img src="C:/Users/aswin/OneDrive/Pictures/tcl.jpeg" id="img">
+				<p class="para">TCL 81.28 cm (32 inch) HD Ready LED Smart TV, 32S5205<br>
+				MRP:<s>₹29990.00</s><br>OFFER: ₹10801.00</p>
+			</div>
+			</div>
+			<div class="col-md-2 col7">
+				<div>
+				<img src="C:/Users/aswin/OneDrive/Pictures/toshiba.avif" id="img">
+				<p class="para">TOSHIBA V35KP 80 cm (32 inch) HD Ready LED Smart Android TV with Google Assistant<br>
+				MRP:<s>₹24,990</s><br>OFFER: ₹13,990</p>
+			  </div>
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>
