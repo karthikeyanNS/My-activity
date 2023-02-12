@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Images transform using Script</title>
+	<script type="text/javascript">
+		function kamal()
+		{
+			d1.innerHTML="<img src='C:/Users/aswin/OneDrive/Pictures/KH.jpg' height='200' width='200'>";
+		}
+		function vijay()
+		{
+				d1.innerHTML="<img src='C:/Users/aswin/OneDrive/Pictures/joseph.jpg' height='200' width='200'>";
+			
+		}
+		function vikram()
+		{
+				d1.innerHTML="<img src='C:/Users/aswin/OneDrive/Pictures/chiyan.jpg' height='200' width='200'>";
+			
+		}
+		function suriya()
+		{
+				d1.innerHTML="<img src='C:/Users/aswin/OneDrive/Pictures/suriya.jpg' height='200' width='200'>";
+		
+		}
+		function kh()
+		{
+			d2.style.visibility="visible";
+			d2.innerHTML="<p> Kamal Haasan was born November 7, 1954 in Paramakudi, Ramanathapuram District, Tamil Nadu. He debuted as a child artiste in the film Kalathoor Kannamma (1960). Since then, he has starred in nearly 220 films in the major Indian languages - Tamil, Telugu, Kannada, Malayalam and Hindi.</p>"
+		}
+		function vj()
+		{
+				d2.style.visibility="visible";
+			d2.innerHTML="<p>Joseph Vijay Chandrasekhar, is an Indian actor and singer who works predominantly in Tamil cinema. He is among the highest paid actors in India. He has played the lead in 66 films and the International Business Times framed him as a consistent performer.</p>"
+		}
+		function vk()
+		{
+					d2.style.visibility="visible";
+			d2.innerHTML="<p>Kennedy John Victor (born 17 April 1966), better known by his stage name Vikram, is an Indian actor and playback singer who predominantly works in Tamil cinema and has also acted in Malayalam, Telugu and Hindi films. He is among the most decorated actors in Tamil cinema, with awards including seven Filmfare Awards South, a National Film Award and a Tamil Nadu State Film Award.</p>"
+		}
+		function si()
+		{
+					d2.style.visibility="visible";
+			d2.innerHTML="<p>Saravanan Sivakumar, known by his stage name Suriya, is an Indian actor, producer, television presenter and a philanthropist. He primarily works in Tamil cinema where he is one of the highest paid actors.</p>"
+		}
+		function kh2()
+		{
+			d3.innerHTML="<img src='C:/Users/aswin/OneDrive/Pictures/KH.jpg' height='500' width='500'>"
+		}
+		function vj2()
+		{
+            d3.innerHTML="<img src='C:/Users/aswin/OneDrive/Pictures/joseph.jpg' height='600' width='600'>";
+		}
+		function vk2()
+		{
+           d3.innerHTML="<img src='C:/Users/aswin/OneDrive/Pictures/chiyan.jpg' height='600' width='600'>";
+		}
+		function showrs(radio_btn)
+		{
+			var rate=0;
+			if(fr1.checked)
+				rate=50;
+			if(fr2.checked)
+				rate=70;
+			if(fr3.checked)
+				rate=60;
+			if(fr4.checked)
+				rate=50;
+			output.innerHTML = radio_btn.value + "<br>RS."+rate;
+		}
+		//function showdt()
+		//{
+		//	var msg="your hobbies are";
+		//	for(let i=0;i<frm.chl.lenght;i++)
+		//	{
+		//		if(frm.chk[i].checked)
+		//			msg+frm.chk[i].value+","
+		//	}
+		//	fav.innerHTML="<h3>"+msg "</h3>";
+		//}
+	</script>
+</head>
+<body>
+<form name="f1">
+	<h1 id="h1" onmouseover="kamal()"> Kamal</h1>
+	<h1 id="h2" onmouseover="vijay()"> Vijay</h1>
+	<h1 id="h3" onmouseover="vikram()"> Vikram</h1>
+	<h1 id="h4" onmouseover="suriya()"> Suriya</h1>
+	<div id="d1"></div>
+</form>
+<hr>
+<form name="f2">
+	<img src='C:/Users/aswin/OneDrive/Pictures/KH.jpg' height='200' width='200' onmouseover="kh()"  onmouseout="d2.style.visibility='hidden';" >
+	<img src='C:/Users/aswin/OneDrive/Pictures/joseph.jpg' height='200' width='200' onmouseover="vj()"  onmouseout="d2.style.visibility='hidden';" >
+	<img src='C:/Users/aswin/OneDrive/Pictures/chiyan.jpg' height='200' width='200' onmouseover="vk()"  onmouseout="d2.style.visibility='hidden';" >
+    <img src='C:/Users/aswin/OneDrive/Pictures/suriya.jpg' height='200' width='200' onmouseover="si()"  onmouseout="d2.style.visibility='hidden';" >
+    <div id="d2" style="height:250px; border: 2px solid red; width: 250px; text-align: justify; color: red; background: cyan;visibility: hidden;"></div>
+</form>
+<hr>
+<form name="f3">
+	<img src='C:/Users/aswin/OneDrive/Pictures/KH.jpg' height='200' width='200' onmouseover="kh2()">
+	<img src='C:/Users/aswin/OneDrive/Pictures/joseph.jpg' height='200' width='200' onmouseover="vj2()">
+	<img src='C:/Users/aswin/OneDrive/Pictures/chiyan.jpg' height='200' width='200' onmouseover="vk2()">
+	 <div id="d3" style="height:400px; border: 2px solid red; width: 400px; text-align: justify; color: red; background: lightcyan; overflow: scroll;"></div>
+</form>
+<hr>
+<form name="f4">
+	<img src='C:/Users/aswin/OneDrive/Pictures/KH.jpg' id="img" height='200' width='200' ondblclick="this.height=500;this.width=500;">
+	<h2>Double Click on this image</h2>
+</form>
+<hr>
+<form>
+	<input type="radio" name="food" value="cirdRise" id="fr1" onclick="showrs(this)">curdrise<br>
+	<input type="radio" name="food" value="limeRise" id="fr2" onclick="showrs(this)">limerise<br>
+	<input type="radio" name="food" value="tamridRise" id="fr3" onclick="showrs(this)">tamridRise<br>
+	<input type="radio" name="food" value="sambarRise" id="fr4" onclick="showrs(this)">sambarRise<br>
+	<div id="output"></div>
+</form>
+<hr>
+<!--<form name="frm">
+	<h1>Choose </h1>
+	<input type="checkbox" name="chk" value="reading" onclick="showdt()">Dance<br>
+	<input type="checkbox" name="chk" value="Sing" onclick="showdt()">Sing<br>
+	<input type="checkbox" name="chk" value="Gym" onclick="showdt()">Gym<br>
+	<input type="checkbox" name="chk" value="Read" onclick="showdt()">Read<br>
+	<input type="checkbox" name="chk" value="Travel" onclick="showdt()">Travel<br>
+	<div id="fav"></div>
+</form>
+-->
+</body>
+</html>
