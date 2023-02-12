@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> java script using variable </title>
+	<script type="text/javascript">
+		var a = 10;
+		let height=200;
+		let width=200;
+		function big()
+		{
+			a=a+10;
+			t1.style.fontSize=a+'px';
+		}
+		function small()
+		{
+			a=a-10;
+			t1.style.fontSize=a+'px';
+		}
+		function left()
+		{
+			a=a+10;
+            img1.style.left=a+'px';
+		}
+		function right()
+		{
+			a=a-10;
+			img1.style.left=a+'px';
+		}
+		function zoom()
+		{ 
+			height=height+50;
+			width=width+50;
+			img1.style.height=height+'px';
+			img1.style.width=width+'px';
+		}
+		function out()
+		{ 
+			height=height-50;
+			width=width-50;
+			img1.style.height=height+'px';
+			img1.style.width=width+'px';
+		}
+        </script>
+</head>
+<body>
+	<form name="f1">
+		<textarea id="t1" rows="10" cols="20" style="height: 300px; width: 400px;"></textarea>
+		<input type="button" name="b1" onclick="big()" value="+">
+		<input type="button" name="b2" onclick="small()" value="-">
+	</form>
+	<hr>
+	<form name="f2">
+		<img src="C:/Users/aswin/OneDrive/Pictures/WhatsApp Image 2023-01-07 at 23.48.46.jpg" height="200" width="200" style="position: absolute;" id="img1">
+		<br><br><br><br>
+		<section style="position:relative; top: 150px;">
+		<input type="button" name="b1" value="left" onclick="left()">
+		<input type="button" name="b2" value="right" onclick="right()">
+		<input type="button" name="b3" value="+" onclick="zoom()">
+		<input type="button" name="b4" value="-" onclick="out()">
+		</section>
+	</form>
+</body>
+</html>
