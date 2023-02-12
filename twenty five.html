@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Script and Style Sheet</title>
+</head>
+<body>
+<form name="f1">
+	<textarea id="t1" rows="10" cols="50"></textarea>
+	<input type="button" name="b1" value="font" onclick="t1.style.fontFamily='jokerman';">
+	<input type="button" name="b2" value="color" onclick="t1.style.color='red';">
+	<input type="button" name="b3" value="resize" onclick="t1.style.width='500'+'px';t1.style.height='300'+'px';">
+	<input type="button" name="b4" value="radius" onclick="t1.style.borderRadius='50'+'px';">
+	<input type="button" name="b5" value="background" onclick="t1.style.background='cyan';">
+</form>
+<hr style="color: red;">
+<form name="f2">
+	<img src="C:/Users/aswin/OneDrive/Pictures/WhatsApp Image 2023-01-07 at 23.48.46.jpg" height="300" width="300" style="border: 2px solid red;" id="img1">
+	<br>
+	Border Size:<input type="number" name="n1" min="1" max="10" value="1">
+	<br>
+	Border Color:<input type="color" name="bc">
+	<br>
+	Border Style:<select name="style">
+		<option>solid</option>
+		<option>double</option>
+		<option>groove</option>
+		<option>dashed</option>
+		<option>dotted</option>
+		<option>inset</option>
+		<option>outset</option>
+	</select>
+	<br>
+	<input type="button" name="b1" value="change" onclick="chall()">
+</form>
+</body>
+<script type="text/javascript">
+	function chall()
+	{
+		img1.style.borderColor=f2.bc.value;
+		img1.style.borderWidth=f2.n1.value+'px';
+		img1.style.borderStyle=f2.style.value;
+	}
+</script>
+</html>
